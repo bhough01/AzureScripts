@@ -43,12 +43,12 @@ $displayname = $firstname + " " + $lastname
 	-ChangePasswordAtLogon:$False `
 	-Description "This account was created using Azure Automation in OMS. " `
 	-path "OU=Users,OU=IT,OU=Groups and External Service Accounts,DC=amh,DC=com,DC=au" `
-  -City $City `
+ 	-City $City `
 	-Office $Office `
 	-MobilePhone $Mobilephone `
 	-OfficePhone $Officenumber `
-  -AccountPassword $AccountPassword `
-  -Enabled:$True `
-	-server "auqldrv00mgt1ei.amh.com.au"
+  	-AccountPassword $AccountPassword `
+  	-Enabled:$True `
+	-server "auqldrv00adc1ei.amh.com.au"
     
 write-output "The account created is " $account
